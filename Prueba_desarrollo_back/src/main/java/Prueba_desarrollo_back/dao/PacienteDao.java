@@ -63,7 +63,7 @@ public class PacienteDao implements PacienteDaoInterfas {
 
     @Override
     public Paciente update(Paciente entity) {
-        jdbcTemplate.update(INSERT,
+        jdbcTemplate.update(UPDATE,
                 entity.getNombre(),
                 entity.getFechaNapaciente(),
                 entity.getFechaRegistro(),

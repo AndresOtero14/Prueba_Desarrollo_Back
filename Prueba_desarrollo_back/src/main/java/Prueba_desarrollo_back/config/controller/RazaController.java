@@ -48,7 +48,7 @@ public class RazaController {
 
 
     @CrossOrigin(origins ="http://localhost:4200" )
-    @PostMapping("/raza/update")
+    @PutMapping("/raza/update")
     public ResponseEntity<ResponseMessage<Raza>> updateRaza(@RequestBody Raza raza) throws ApplicationCustomException{
         log.debug("REST request to update Raza : {} ", raza);
 

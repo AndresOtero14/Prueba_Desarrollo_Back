@@ -13,12 +13,12 @@ import java.util.List;
 
 @Repository
 public class EspecieDao implements EspecieDaoInterfas {
-    private static final String INSERT ="INSERT INTO especie(idpaciente,nombre, fk_raza) VALUES (?,?,?)";
-    private static final String UPDATE = "UPDATE especie set nombre=? , fk_raza=? WHERE idpaciente = ?";
+    private static final String INSERT ="INSERT INTO especie(idespecie,nombre, fk_raza) VALUES (?,?,?)";
+    private static final String UPDATE = "UPDATE especie set nombre=? , fk_raza=? WHERE idespecie = ?";
     private static final String SELECT ="SELECT * FROM especie";
-    private static final String SELECTBYID = SELECT + " WHERE idpaciente = ?";
+    private static final String SELECTBYID = SELECT + " WHERE idespecie = ?";
 
-    private static final String DELETE="DELETE FROM especie WHERE idpaciente = ?";
+    private static final String DELETE="DELETE FROM especie WHERE idespecie = ?";
 
 
     JdbcTemplate jdbcTemplate;
